@@ -1,15 +1,24 @@
-# mediawiki
+mediawiki Cookbook
+==================
+TODO: Enter the cookbook description here.
 
-Configures a system to run mediawiki. It will install and configure MySQL, Apache, and PHP.
-This cookbook downloads the specified version of mediawiki, untars it, and drops it in your desired location.
-You will need to configure the wiki for yourself.
+e.g.
+This cookbook makes your favorite breakfast sandwich.
 
-## Supported Platforms
+Requirements
+------------
+TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
 
-CentOS/RHEL 6
+e.g.
+#### packages
+- `toaster` - mediawiki needs toaster to brown your bagel.
 
-## Attributes
+Attributes
+----------
+TODO: List your cookbook attributes here.
 
+e.g.
+#### mediawiki::default
 <table>
   <tr>
     <th>Key</th>
@@ -18,69 +27,42 @@ CentOS/RHEL 6
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['mediawiki']['enable_https']</tt></td>
+    <td><tt>['mediawiki']['bacon']</tt></td>
     <td>Boolean</td>
-    <td>whether to include apache2::mod_ssl</td>
-    <td><tt>false</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['mediawiki']['version']</tt></td>
-    <td>String</td>
-    <td>Version number of mediawiki to install</td>
-    <td><tt>1.24.0</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['mediawiki']['path']</tt></td>
-    <td>String</td>
-    <td>Location to install mediawiki files</td>
-    <td><tt>/var/www/html/wiki</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['mediawiki']['mysql_host']</tt></td>
-    <td>String</td>
-    <td>Location of MySQL Server</td>
-    <td><tt>localhost</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['mediawiki']['mysql_password']</tt></td>
-    <td>String</td>
-    <td>MySQL root user password</td>
-    <td><tt>randompassword</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['mediawiki']['mysql_dbname']</tt></td>
-    <td>String</td>
-    <td>Wiki database name</td>
-    <td><tt>wiki</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['mediawiki']['mysql_dbuser']</tt></td>
-    <td>String</td>
-    <td>Wiki MySQL password</td>
-    <td><tt>wiki_user</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['mediawiki']['mysql_dbpass']</tt></td>
-    <td>String</td>
-    <td>Wiki MySQL user password</td>
-    <td><tt>wiki_pass</tt></td>
+    <td>whether to include bacon</td>
+    <td><tt>true</tt></td>
   </tr>
 </table>
 
-## Usage
+Usage
+-----
+#### mediawiki::default
+TODO: Write usage instructions for each cookbook.
 
-### mediawiki::default
-
-Include `mediawiki` in your node's `run_list`:
+e.g.
+Just include `mediawiki` in your node's `run_list`:
 
 ```json
 {
+  "name":"my_node",
   "run_list": [
-    "recipe[mediawiki::default]"
+    "recipe[mediawiki]"
   ]
 }
 ```
 
-## License and Authors
+Contributing
+------------
+TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
 
-Author:: Patrick Moore (<moore267@marshall.edu>)
+e.g.
+1. Fork the repository on Github
+2. Create a named feature branch (like `add_component_x`)
+3. Write your change
+4. Write tests for your change (if applicable)
+5. Run the tests, ensuring they all pass
+6. Submit a Pull Request using Github
+
+License and Authors
+-------------------
+Authors: TODO: List authors
